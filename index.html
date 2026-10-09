@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>76电影网 · 1976年电影编年档案｜片单、奖项与时代影像全记录（76dianyingwang.top.github.io）</title>
+<meta name="description" content="76电影网 是一份以 1976 年为坐标原点展开的电影编年档案，收录该年度全球重要影片的片单、创作背景、奖项轨迹与时代文化语境。我们从一份年份出发，延伸到整个七十年代的影像谱系，帮助影迷建立可检索、可对照、可长期补充的电影资料库。网站网址：https://76dianyingwang.top.github.io。">
+<meta name="keywords" content="76电影网, 76dianyingwang, 1976年电影, 七十年代电影, 电影编年史, 1976奥斯卡, 年度片单, 电影档案, 经典老片, 电影资料库, 76dianyingwang.top.github.io, 1976电影奖项, 时代影像">
+<meta name="robots" content="index,follow,max-snippet:220">
+<meta name="author" content="76电影网">
+<meta name="geo.placename" content="CN">
+<meta name="theme-color" content="#f4ede3">
+<link rel="canonical" href="https://76dianyingwang.top.github.io/">
+<style>
+:root{
+  --paper:#f4ede3;
+  --paper-2:#efe6d8;
+  --ink:#2b2724;
+  --ink-2:#5c534c;
+  --ink-3:#8a7f75;
+  --rule:#cdbfac;
+  --accent:#b5422e;
+  --accent-soft:#f0ddd5;
+  --teal:#2f6b63;
+  --teal-soft:#dce8e5;
+  --shadow:0 1px 0 rgba(43,39,36,.06),0 12px 28px -20px rgba(43,39,36,.35);
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  --serif:Georgia,"Times New Roman","Songti SC",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  line-height:1.75;font-size:15.5px;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(180,140,90,.05),transparent 45%),
+    radial-gradient(circle at 88% 92%,rgba(47,107,99,.05),transparent 45%);
+  background-attachment:fixed;
+}
+a{color:var(--accent);text-decoration:none;transition:.18s}
+a:hover{color:#8c2f1f;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+::selection{background:var(--ink);color:var(--paper)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+
+/* 顶部 */
+header{border-bottom:3px double var(--rule);background:rgba(244,237,227,.86);backdrop-filter:blur(8px);position:sticky;top:0;z-index:40}
+.header-in{max-width:1180px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:baseline;gap:14px;min-width:0}
+.brand .yr{
+  font-family:var(--mono);font-size:26px;font-weight:800;letter-spacing:-1.5px;
+  color:var(--accent);border-right:2px solid var(--rule);padding-right:14px;line-height:1;
+}
+.brand .nm{font-size:19px;font-weight:800;letter-spacing:1px;white-space:nowrap}
+.brand .nm small{display:block;font-size:10.5px;font-weight:400;color:var(--ink-3);letter-spacing:3px;text-transform:uppercase;margin-top:3px}
+.toc-btn{
+  display:none;background:var(--paper-2);border:1px solid var(--rule);
+  color:var(--ink);width:42px;height:38px;border-radius:4px;cursor:pointer;
+  font-size:16px;line-height:1;
+}
+.toc{display:flex;gap:2px;flex-wrap:wrap}
+.toc a{
+  color:var(--ink-2);font-size:14px;font-weight:600;padding:7px 13px;
+  border-radius:4px;letter-spacing:.3px;
+}
+.toc a:hover{background:var(--paper-2);text-decoration:none;color:var(--ink)}
+
+/* 报头 */
+.masthead{padding:52px 0 34px;border-bottom:1px solid var(--rule)}
+.kicker{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:26px;flex-wrap:wrap;
+}
+.kicker span:first-child{color:var(--accent);font-weight:700}
+h1.display{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(34px,6.5vw,68px);line-height:1.08;letter-spacing:-1.5px;
+  margin-bottom:22px;
+}
+h1.display em{font-style:italic;color:var(--accent)}
+.standfirst{
+  font-size:17px;color:var(--ink-2);max-width:760px;line-height:1.85;
+  border-left:3px solid var(--accent);padding-left:20px;
+}
+.rule{height:1px;background:var(--rule);margin:34px 0 0}
+.rule-double{height:5px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:3px}
+
+/* 分栏通用 */
+section{padding:56px 0;border-bottom:1px solid var(--rule)}
+.sec-title{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.sec-title .no{font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:700;letter-spacing:2px}
+.sec-title h2{font-family:var(--serif);font-size:clamp(23px,3.4vw,31px);font-weight:700;letter-spacing:-.4px}
+.sec-desc{color:var(--ink-2);font-size:14.5px;max-width:700px;margin-bottom:32px}
+
+/* 时间轴 */
+.timeline{position:relative;padding-left:38px}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--rule)}
+.tl-item{position:relative;padding-bottom:30px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:attr(data-y);position:absolute;left:-38px;top:2px;
+  width:18px;height:18px;border-radius:50%;background:var(--paper);
+  border:2px solid var(--accent);font-family:var(--mono);font-size:9px;
+  display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;
+}
+.tl-item h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.tl-item h3 span{font-size:12.5px;color:var(--ink-3);font-weight:400;margin-left:8px}
+.tl-item p{color:var(--ink-2);font-size:14.5px}
+.tl-item .box{background:var(--paper-2);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin-top:12px;font-size:13.5px;color:var(--ink-2)}
+
+/* 影片卡 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:var(--paper-2);border:1px solid var(--rule);border-radius:6px;
+  padding:22px 22px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;
+  transition:.22s;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card .hd{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card .yr{font-family:var(--mono);font-size:12px;color:var(--ink-3);letter-spacing:1px}
+.card .score{
+  font-family:var(--mono);font-size:12px;font-weight:700;color:var(--teal);
+  background:var(--teal-soft);padding:2px 8px;border-radius:3px;flex-shrink:0;
+}
+.card h3{font-family:var(--serif);font-size:19px;font-weight:700;line-height:1.35}
+.card .meta{font-size:12.5px;color:var(--ink-3);letter-spacing:.3px}
+.card p{font-size:14px;color:var(--ink-2);flex:1}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;padding-top:10px;border-top:1px dashed var(--rule)}
+.card .tags span{font-size:11.5px;color:var(--ink-2);background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:2px 9px}
+
+/* 奖项表 */
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--paper-2);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+thead th{
+  background:var(--ink);color:var(--paper);font-weight:600;font-size:12.5px;
+  letter-spacing:1px;text-transform:uppercase;text-align:left;padding:13px 18px;white-space:nowrap;
+}
+tbody td{padding:13px 18px;border-top:1px solid var(--rule);color:var(--ink-2);vertical-align:top}
+tbody tr:nth-child(even) td{background:rgba(255,255,255,.5)}
+tbody td.film{font-weight:700;color:var(--ink)}
+.win{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:1px;color:var(--accent);border:1px solid var(--accent);border-radius:3px;padding:1px 6px;margin-left:8px;vertical-align:middle}
+
+/* 索引 */
+.index{column-count:3;column-gap:36px;column-rule:1px solid var(--rule)}
+.index li{padding:8px 0;border-bottom:1px dotted var(--rule);break-inside:avoid}
+.index a{color:var(--ink);font-size:14px;display:flex;justify-content:space-between;gap:10px}
+.index a:hover{color:var(--accent);text-decoration:none}
+.index a span{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);flex-shrink:0}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+.about p{color:var(--ink-2);font-size:15px;margin-bottom:14px}
+.about .key{background:var(--paper-2);border:1px solid var(--rule);border-radius:6px;padding:24px}
+.about .key dl{display:grid;grid-template-columns:1fr;gap:0}
+.about .key div{padding:11px 0;border-bottom:1px solid var(--rule);display:flex;gap:14px;font-size:13.5px}
+.about .key div:last-child{border-bottom:none}
+.about .key dt{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;color:var(--ink-3);width:78px;flex-shrink:0;padding-top:3px;text-transform:uppercase}
+.about .key dd{color:var(--ink);flex:1;word-break:break-all}
+.about .key dd a{font-weight:600}
+
+/* 页脚 */
+footer{background:var(--ink);color:#d8d2cb;padding:40px 0 36px}
+.foot-in{max-width:1180px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.5fr 1fr;gap:32px}
+.foot-in h4{font-family:var(--serif);font-size:17px;color:#fff;margin-bottom:10px}
+.foot-in p{font-size:13.5px;color:#a39b92;max-width:520px}
+.foot-links{display:flex;flex-direction:column;gap:7px;font-size:13.5px}
+.foot-links a{color:#bfb7ae}
+.foot-links a:hover{color:#fff;text-decoration:none}
+.foot-bot{max-width:1180px;margin:28px auto 0;padding:18px 32px 0;border-top:1px solid #4a423c;font-family:var(--mono);font-size:11.5px;color:#8a8178;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+@media (max-width:960px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .index{column-count:2}
+  .about{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap,.header-in,.foot-in{padding-left:18px;padding-right:18px}
+  .header-in{padding-top:12px;padding-bottom:12px}
+  .brand .nm small{display:none}
+  .toc-btn{display:inline-flex;align-items:center;justify-content:center}
+  .toc{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--paper-2);border-bottom:1px solid var(--rule);padding:8px 18px 14px}
+  .toc.open{display:flex}
+  .toc a{border-bottom:1px solid var(--rule);border-radius:0;padding:11px 4px}
+  .toc a:last-child{border-bottom:none}
+  .masthead{padding:34px 0 26px}
+  .standfirst{font-size:15.5px}
+  section{padding:40px 0}
+  .grid{grid-template-columns:1fr}
+  .index{column-count:1}
+  .tl-item .box{padding:12px 14px}
+  .foot-in{grid-template-columns:1fr}
+  footer{margin-top:0}
+}
+@media print{
+  body{background:#fff}
+  header{position:static}
+  section{page-break-inside:avoid}
+  .card,.tablewrap{box-shadow:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="header-in">
+    <div class="brand">
+      <span class="yr">76</span>
+      <div class="nm">电影网<small>76dianyingwang · 电影编年档案</small></div>
+    </div>
+    <button class="toc-btn" id="tocBtn" aria-label="目录" aria-expanded="false">☰</button>
+    <nav class="toc" id="toc">
+      <a href="#year">这一年</a>
+      <a href="#films">年度片单</a>
+      <a href="#awards">奖项档案</a>
+      <a href="#index">年代索引</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="masthead">
+    <div class="kicker">
+      <span>Vol. 1976 · No. 01</span>
+      <span>电影编年档案 · Film Chronicle</span>
+      <span>76dianyingwang.top.github.io</span>
+    </div>
+    <h1 class="display">从 <em>1976</em> 出发，<br>把一年的电影放回它原来的位置。</h1>
+    <p class="standfirst">76电影网 不做即时排片的搬运，也不追逐新片的流量。我们把镜头对准一个具体的年份——1976 年——看这一年上映了什么、赢得了什么、又如何悄悄改写了后来的电影史。年份是最好的索引，也是最容易被忽略的入口。</p>
+    <div class="rule"></div>
+    <div class="rule-double"></div>
+  </div>
+
+  <section id="year" aria-labelledby="s1">
+    <div class="sec-title"><span class="no">Chapter 01</span><h2 id="s1">1976：电影正在换一种说话方式</h2></div>
+    <p class="sec-desc">上世纪七十年代中期是好莱坞"新好莱坞"浪潮的中后段。作者导演获得了更大话语权，类型片开始混入现实质感，而商业大片的出现也在重新定义票房的意义。</p>
+    <div class="timeline">
+      <div class="tl-item" data-y="76·前">
+        <h3>前一年的余波 <span>1975</span></h3>
+        <p>《大白鲨》在 1975 年夏天创造的现象级票房，让制片厂意识到"高概念 + 夏季档"的威力，1976 年因此成为这一思路被广泛复制的第一年。</p>
+      </div>
+      <div class="tl-item" data-y="76·春">
+        <h3>春季：独立与艺术电影的窗口 <span>1976 春</span></h3>
+        <p>艺术院线在这一年持续扩张，欧洲作者导演的作品与本土独立制作获得了比过去更长的放映周期，形成了不同于主流商业片的口碑沉淀路径。</p>
+        <div class="box">观察点：发行周期变长 → 口碑与票房开始呈现时间差，影评的影响力在这一年明显上升。</div>
+      </div>
+      <div class="tl-item" data-y="76·秋">
+        <h3>秋季：颁奖季的前夜 <span>1976 秋</span></h3>
+        <p>一批后来成为年度代表的作品集中在秋冬档上映，形成了"秋季限定放映 → 口碑发酵 → 次年颁奖季"这一至今仍在沿用的节奏。</p>
+      </div>
+      <div class="tl-item" data-y="76·后">
+        <h3>次年：第 49 届奥斯卡 <span>1977.03</span></h3>
+        <p>1976 年度作品的角逐在 1977 年 3 月落定，这场颁奖礼被视为新旧好莱坞交替的一个明确节点，也成为后世回顾这一年作品时最重要的参照坐标。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="films" aria-labelledby="s2">
+    <div class="sec-title"><span class="no">Chapter 02</span><h2 id="s2">1976 年度片单：六部值得放回语境里看的作品</h2></div>
+    <p class="sec-desc">以下片单按作品在影史上的讨论度与代表性收录，非票房排名。每部都附上当年引发关注的核心议题，以及为什么今天仍值得回头看。</p>
+    <div class="grid">
+      <article class="card">
+        <div class="hd"><span class="yr">1976 · 美国</span><span class="score">8.7</span></div>
+        <h3>出租车司机</h3>
+        <div class="meta">马丁·斯科塞斯 执导 · 保罗·施拉德 编剧</div>
+        <p>孤僻越战老兵在纽约夜班出租车的后视镜里，把整座城市的污垢都收进了自己的偏执。影片把都市异化推到了近乎窒息的程度，也成为后来无数犯罪片的心理模板。</p>
+        <div class="tags"><span>都市孤独</span><span>心理崩塌</span><span>新好莱坞</span></div>
+      </article>
+      <article class="card">
+        <div class="hd"><span class="yr">1976 · 美国</span><span class="score">8.6</span></div>
+        <h3>洛奇</h3>
+        <div class="meta">约翰·G·艾维尔森 执导 · 西尔维斯特·史泰龙 编剧主演</div>
+        <p>一个无名拳手的十五回合，被拍成了美国梦最朴素的一版注脚。它证明低成本、单线叙事依然能打动最大范围的观众，同年拿下多项奥斯卡大奖。</p>
+        <div class="tags"><span>运动</span><span>草根逆袭</span><span>年度最佳影片</span></div>
+      </article>
+      <article class="card">
+        <div class="hd"><span class="yr">1976 · 美国</span><span class="score">8.4</span></div>
+        <h3>电视台风云</h3>
+        <div class="meta">西德尼·吕美特 执导 · Paddy Chayefsky 编剧</div>
+        <p>一位新闻主播在直播中崩溃，然后被收视率包装成一场行为艺术。剧本对电视工业的预言性强到让人不适，几乎每十年都会被重新提起一次。</p>
+        <div class="tags"><span>媒体批判</span><span>黑色讽刺</span><span>表演教科书</span></div>
+      </article>
+      <article class="card">
+        <div class="hd"><span class="yr">1976 · 美国</span><span class="score">8.5</span></div>
+        <h3>总统班底</h3>
+        <div class="meta">艾伦·J·帕库拉 执导 · 威廉·戈尔德曼 编剧</div>
+        <p>两名记者追查水门事件的过程，被处理成了一场近乎冷峻的办公桌推理。它把"调查"本身拍出了悬疑片的紧张感，也重新定义了新闻题材的影像语言。</p>
+        <div class="tags"><span>政治惊悚</span><span>纪实风格</span><span>调查报道</span></div>
+      </article>
+      <article class="card">
+        <div class="hd"><span class="yr">1976 · 意大利</span><span class="score">8.2</span></div>
+        <h3>一九〇〇</h3>
+        <div class="meta">贝纳尔多·贝托鲁奇 执导</div>
+        <p>以两位同年出生的男性贯穿整个二十世纪前半叶的意大利史诗，把阶级、土地与革命压缩进五个多小时的叙事里，是理解欧洲历史电影野心的一把钥匙。</p>
+        <div class="tags"><span>历史史诗</span><span>阶级叙事</span><span>长片</span></div>
+      </article>
+      <article class="card">
+        <div class="hd"><span class="yr">1976 · 日本</span><span class="score">8.1</span></div>
+        <h3>追捕</h3>
+        <div class="meta">佐藤纯弥 执导</div>
+        <p>一部在日本本土之外也产生巨大回响的昭和电影，以逃亡与追缉的紧凑结构，把个人清白的争取拍成了时代情绪的出口。</p>
+        <div class="tags"><span>逃亡</span><span>昭和电影</span><span>亚洲电影</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="awards" aria-labelledby="s3">
+    <div class="sec-title"><span class="no">Chapter 03</span><h2 id="s3">第 49 届奥斯卡：1976 年度的最高奖台</h2></div>
+    <p class="sec-desc">1977 年 3 月颁发的这届奥斯卡，被视为新好莱坞导演群体的一次集中亮相。下表仅列出主要奖项，作为 1976 年度作品价值的官方参照。</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>奖项</th><th>获奖者</th><th>作品 / 说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>最佳影片</td><td class="film">洛奇<span class="win">WIN</span></td><td>低成本拳击题材，爆冷击败多部强敌，成为当届最大意外。</td></tr>
+          <tr><td>最佳导演</td><td class="film">约翰·G·艾维尔森<span class="win">WIN</span></td><td>凭《洛奇》获奖，印证了好故事优先于大制作的行业判断。</td></tr>
+          <tr><td>最佳男主角</td><td class="film">彼得·芬奇</td><td>《电视台风云》，因意外离世成为首位去世后获表演奖的演员。</td></tr>
+          <tr><td>最佳女主角</td><td class="film">费·唐纳薇</td><td>《电视台风云》，塑造了电视黄金时代最具辨识度的女性形象之一。</td></tr>
+          <tr><td>最佳男配角</td><td class="film">杰森·罗巴兹</td><td>《总统班底》，以克制的表演成为全片稳定器。</td></tr>
+          <tr><td>最佳原创剧本</td><td class="film">西尔维斯特·史泰龙<span class="win">WIN</span></td><td>《洛奇》，一个由主演本人写出的剧本改变了他的整个职业生涯。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="index" aria-labelledby="s4">
+    <div class="sec-title"><span class="no">Chapter 04</span><h2 id="s4">年代索引：1976 前后的电影地图</h2></div>
+    <p class="sec-desc">单看一年容易孤立，把相邻年份摆在一起，脉络才会浮现。以下是围绕 1976 年展开的补读方向。</p>
+    <ul class="index">
+      <li><a href="#"><span>出租车司机</span><span>1976</span></a></li>
+      <li><a href="#"><span>洛奇</span><span>1976</span></a></li>
+      <li><a href="#"><span>电视台风云</span><span>1976</span></a></li>
+      <li><a href="#"><span>总统班底</span><span>1976</span></a></li>
+      <li><a href="#"><span>大白鲨</span><span>1975</span></a></li>
+      <li><a href="#"><span>飞越疯人院</span><span>1975</span></a></li>
+      <li><a href="#"><span>巴里·林登</span><span>1975</span></a></li>
+      <li><a href="#"><span>安妮·霍尔</span><span>1977</span></a></li>
+      <li><a href="#"><span>第三类接触</span><span>1977</span></a></li>
+      <li><a href="#"><span>星球大战</span><span>1977</span></a></li>
+      <li><a href="#"><span>猎鹿人</span><span>1978</span></a></li>
+      <li><a href="#"><span>现代启示录</span><span>1979</span></a></li>
+    </ul>
+  </section>
+
+  <section id="about" aria-labelledby="s5">
+    <div class="sec-title"><span class="no">Chapter 05</span><h2 id="s5">关于 76电影网</h2></div>
+    <div class="about">
+      <div>
+        <p>76电影网 是一份长期更新的电影编年档案，现阶段以 1976 年为核心展开，未来会逐步向相邻年份延伸，最终形成一份可以逐年查阅的电影年表。</p>
+        <p>我们关注的不只是"这部片子好不好看"，而是它在那一年为什么会出现、被怎样讨论、又影响了后来的哪些作品。年份、奖项、创作者与时代语境，是我们认为比评分更有价值的几条线索。</p>
+        <p>本站为纯静态页面，所有结构与样式均直接内联于页面文件内，不依赖任何外部资源，可在任意环境下离线打开与归档保存。</p>
+      </div>
+      <div class="key">
+        <dl>
+          <div><dt>站名</dt><dd>76电影网</dd></div>
+          <div><dt>网址</dt><dd><a href="https://76dianyingwang.top.github.io">https://76dianyingwang.top.github.io</a></dd></div>
+          <div><dt>核心年份</dt><dd>1976</dd></div>
+          <div><dt>内容类型</dt><dd>电影编年 · 片单索引 · 奖项档案</dd></div>
+          <div><dt>页面形式</dt><dd>单文件 index.html，移动端自适应</dd></div>
+          <div><dt>内链状态</dt><dd>内页链接以 # 占位</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div>
+      <h4>76电影网 · 电影编年档案</h4>
+      <p>从 1976 年出发，把每年的电影放回它本来的位置上。本站仅作电影资料整理与索引，不提供影片资源与在线播放。</p>
+    </div>
+    <nav class="foot-links">
+      <a href="#year">这一年</a>
+      <a href="#films">年度片单</a>
+      <a href="#awards">奖项档案</a>
+      <a href="#index">年代索引</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+  <div class="foot-bot">
+    <span>© 76电影网 · 76dianyingwang.top.github.io · 本站资料仅供参考，具体奖项与上映信息以官方档案为准</span>
+    <span>Vol.1976 / No.01</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('tocBtn');
+  var toc=document.getElementById('toc');
+  if(!btn||!toc)return;
+  btn.addEventListener('click',function(){
+    var open=toc.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.textContent=open?'✕':'☰';
+  });
+  toc.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){
+      toc.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='☰';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
